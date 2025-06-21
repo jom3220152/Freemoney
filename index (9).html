@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>มึงโดนกุหลอกแล้ว</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: red;
+      font-size: 40px;
+      font-family: "Arial", sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: flashBg 0.5s infinite;
+    }
+
+    @keyframes flashBg {
+      0% { background-color: black; }
+      50% { background-color: darkred; }
+      100% { background-color: black; }
+    }
+
+    h1 {
+      animation: zoomIn 1s ease-in-out infinite alternate;
+      text-shadow: 2px 2px 8px red, 0 0 20px crimson;
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>มึงโดนกุหลอกแล้ว</h1>
+
+  <audio autoplay loop>
+    <source src="https://www.myinstants.com/media/sounds/horror.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
